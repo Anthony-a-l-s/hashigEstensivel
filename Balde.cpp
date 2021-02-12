@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+using namespace std;
 
 Balde::Balde()
 {
@@ -12,24 +12,24 @@ Balde::~Balde()
 
 }
 
-Balde::getChave(int i)
+string Balde::getChave(int i)
 {
-     return this.chave[i];
+     return chave[i];
 }
 
-Balde::setChave(string s; int i)
+void Balde::setChave(string s; int i)
 {
-    this.chave[i] = s;
+    chave[i] = s;
 }
 
-Balde::getDLocal()
+int Balde::getDLocal()
 {
-      return this.dLocal;
+      return dLocal;
 }
 
-Balde::setDLocal(int n)
+void Balde::setDLocal(int n)
 {
-    this.dLocal = n;
+    dLocal = n;
 }
 
 
