@@ -6,4 +6,13 @@ class Diretorio
 {
      private:
      int dGlobal;
+
+     public:
+     Diretorio()
+     ^Diretorio()
+     int get dGlobal();
+     
+
+
+
 };
