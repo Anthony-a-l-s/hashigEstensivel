@@ -5,5 +5,6 @@ using namespace std;
 class Diretorio
 {
      private:
-     //vector<*balde>pseudoChave;
+     //vector<Balde>pseudoChave;
+     int dGlobal;
 };
