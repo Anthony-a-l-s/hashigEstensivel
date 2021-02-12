@@ -8,11 +8,9 @@ class Diretorio
      int dGlobal;
 
      public:
-     Diretorio()
-     ^Diretorio()
-     int get dGlobal();
-     
-
-
-
+     Diretorio();
+     ~Diretorio();
+     int getDGlobal();
+     void steDGlobal(int n);
+     void criarDiretorio(int d);
 };
