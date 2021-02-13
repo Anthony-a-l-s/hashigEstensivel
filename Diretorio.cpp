@@ -2,11 +2,14 @@
 #include <vector>
 #include <math.h>
 #include "Diretorio.h"
-#include "No.h"
+#include "PseudoChave.h"
 
 Diretorio::Diretorio(int n)
 {
-    //criaDiretorio(n);
+     setDGlobal(n);
+     max = pow(2,n);
+     criarDiretorio(n);
+
 }
 
 Diretorio::~Diretorio()
@@ -21,24 +24,15 @@ void Diretorio::setDGlobal(int n)
 {
     dGlobal = n;
 }
+
 void Diretorio::criarDiretorio(int n)
 {
-       No *p = new No();
-       primeiro = p ;
-       int i = 1;
-      while(i < (pow(2,n)))
-      {
-          No *novo = new No();
-          if(i == 1)
-          {   
-              p->setProx(novo);
-          }
-          else
-          {
-                
-          }
+       for(int i = 0; i < max; i++)
+       {
+            PseudoChave *p = new PseudoChave();
+            pc.push_back(*p);
 
-      }
+       }
 }
 
 

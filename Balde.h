@@ -10,10 +10,10 @@ class Balde
     int dLocal;
 
     public:
-    Balde();
+    Balde(int d, int n);
     ~Balde();
-    int getChave();
-    void setChave();
+    string getChave(int i);
+    void setChave(string s, int i);
     int getDLocal();
-    void setDLocal();
+    void setDLocal(int n);
 };
