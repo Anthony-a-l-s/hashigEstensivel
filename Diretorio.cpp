@@ -1,29 +1,43 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include "Diretorio.h"
+#include "No.h"
 
 Diretorio::Diretorio(int n)
 {
-    criaDiretorio(n);
+    //criaDiretorio(n);
 }
 
 Diretorio::~Diretorio()
 {
     
 }
-Diretorio::getDGlobal()
+int Diretorio::getDGlobal()
 {
     return dGlobal;
 }
-Diretorio::setDGlobal(int n)
+void Diretorio::setDGlobal(int n)
 {
     dGlobal = n;
 }
-Diretorio::criaDiretorio(int n)
+void Diretorio::criarDiretorio(int n)
 {
-      for(int i = 0; i <(pow(n,2)), i++)
+       No *p = new No();
+       primeiro = p ;
+       int i = 1;
+      while(i < (pow(2,n)))
       {
-          No *p = new No();
+          No *novo = new No();
+          if(i == 1)
+          {   
+              p->setProx(novo);
+          }
+          else
+          {
+                
+          }
+
       }
 }
 
