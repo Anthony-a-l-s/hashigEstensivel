@@ -3,6 +3,9 @@
 #include <math.h>
 #include "Diretorio.h"
 #include "PseudoChave.h"
+#include "Balde.h"
+
+using namespace std;
 
 Diretorio::Diretorio(int n)
 {
@@ -11,7 +14,6 @@ Diretorio::Diretorio(int n)
      criarDiretorio(n);
 
 }
-
 Diretorio::~Diretorio()
 {
     
@@ -27,7 +29,7 @@ void Diretorio::setDGlobal(int n)
 
 void Diretorio::criarDiretorio(int n)
 {
-       for(int i = 0; i < max; i++)
+       for(int i = 0; i < (pow(2,n)); i++)
        {
             PseudoChave *p = new PseudoChave();
             pc.push_back(*p);

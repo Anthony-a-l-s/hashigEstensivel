@@ -3,17 +3,19 @@
 
 class PseudoChave
 {
+        public:
+    PseudoChave();
+    ~PseudoChave();
+    string getInfo();
+    void setInfo(string s);
+    Balde getBalde();
+    void setBalde(Balde *a);
+    
     private:
     string info;
     Balde *b;
    
 
-    public:
-    PseudoChave() {info = '0'; b = NULL};
-    ~PseudoChave() {};
-    string getInfo() {return info;};
-    string setInfo(string s) {info = s;};
-    Balde getBalde() {return *b;};
-    void setBalde(Balde *a) {b = a;};
+
     
 };

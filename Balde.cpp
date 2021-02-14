@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 #include "Balde.h"
+
+using namespace std;
 
 Balde::Balde(int d, int n)
 {
